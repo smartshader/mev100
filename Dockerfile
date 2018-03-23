@@ -23,6 +23,10 @@ RUN npm install
 # will be mapped to host port
 EXPOSE 8080
 
+# Specify envrionment variables that application accepts
+# You can also specify a default value
+ENV CONFIG default
+
 # Executable to run when container is created
 ENTRYPOINT ["node"]
 
